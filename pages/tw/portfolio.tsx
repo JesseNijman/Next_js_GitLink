@@ -1,5 +1,6 @@
 import SideMenu from "../../components/sidemenu";
 import CountDown_ProgressBar from "../../components/countDown_ProgressBar";
+import Carousel from "../../components/carousel";
 
 export default function Text() {
   return (
@@ -25,6 +26,43 @@ export default function Text() {
             alt="Kitty"
             className="mt-8 w-full object-cover h-96"
           />
+          <section className="py-16 bg-gray-700">
+            <h2 className="text-5xl text-white px-10 mb-8">Carousel</h2>
+            <Carousel
+              allPictures={[
+                {
+                  image: "Olifant.jpg",
+                  alt_text: "Olifant in het bos",
+                  backPos: "50% 10%",
+                },
+                {
+                  image: "Dolphin.jpg",
+                  alt_text: "Two Dolphins laughing",
+                  backPos: "50% 30%",
+                },
+                {
+                  image: "Owl.jpg",
+                  alt_text: "Owl in the snow laughing",
+                  backPos: "50% 30%",
+                },
+                {
+                  image: "Tiger.jpg",
+                  alt_text: "Tiger looks into the distance",
+                  backPos: "50% 20%",
+                },
+                {
+                  image: "Stokstaartjes.jpg",
+                  alt_text: "Family of Timon from the Lion King",
+                  backPos: "50% 10%",
+                },
+                {
+                  image: "Panda.jpg",
+                  alt_text: "Panda in een hangmatje, zo cute!",
+                  backPos: "50% 10%",
+                },
+              ]}
+            ></Carousel>
+          </section>
         </section>
       </section>
       <SideMenu />
